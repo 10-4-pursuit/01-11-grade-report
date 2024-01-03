@@ -7,6 +7,14 @@ grades.forEach(grade => {
 
   // Write your if-else statements here
   // Use ranges for grade comparisons
-
+  if (grade > 90) {
+    feedback = 'Excellent!';
+  }
+  else if (grade > 75 && grade < 89) {
+    feedback = 'Good job!';
+  } 
+  else {
+    feedback = 'Need improvement';
+  }
   console.log(`Grade: ${grade} - ${feedback}`);
 });
